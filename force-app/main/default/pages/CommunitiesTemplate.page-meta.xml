@@ -6,18 +6,13 @@
     <description>Default template for experiences pages</description>
     <label>CommunitiesTemplate</label>
     <packageVersions>
-        <majorNumber>1</majorNumber>
-        <minorNumber>0</minorNumber>
-        <namespace>OIQ</namespace>
+        <majorNumber>240</majorNumber>
+        <minorNumber>5</minorNumber>
+        <namespace>SBQQ</namespace>
     </packageVersions>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>0</minorNumber>
-        <namespace>SIQCloud</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>1</majorNumber>
-        <minorNumber>0</minorNumber>
-        <namespace>pi3</namespace>
+        <minorNumber>7</minorNumber>
+        <namespace>sf_com_apps</namespace>
     </packageVersions>
 </ApexPage>
