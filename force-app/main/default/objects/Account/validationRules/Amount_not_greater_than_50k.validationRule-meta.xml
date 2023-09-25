@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_not_greater_than_50k</fullName>
+    <active>true</active>
+    <errorConditionFormula>AnnualRevenue &lt; 50000</errorConditionFormula>
+    <errorDisplayField>AnnualRevenue</errorDisplayField>
+    <errorMessage>AnnualRevenue cannot be greater than 50k</errorMessage>
+</ValidationRule>
