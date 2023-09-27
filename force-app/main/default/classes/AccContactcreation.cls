@@ -1,3 +1,56 @@
 public class AccContactcreation {
+    
+    public static String accmethod(Set<ID> acc_ID){
+        
+        Account acc = [Select id,Name,Count_of_Contact__c from Account where ID IN :acc_ID ];
+        List<Contact> lstcont = new List<Contact>();
+        Integer numberOfContacts = [SELECT COUNT() FROM Contact WHERE AccountId =:acc.ID];
+        Contact con = new contact();
+        
+        if(numberOfContacts >= acc.Count_of_Contact__c){
+            con.AccountId = acc.ID;
+            con.LastName = 'demo';
+            con.Stage__c = 'pending';
+            
+        }
+        else{
+            // Contact con = new contact();
+            con.AccountId = acc.ID;
+            con.LastName = 'demo';
+            con.Stage__c = 'open';
+            
+        }
+        
+        
+        lstcont.add(con);
+        
+        system.debug('List created'+lstcont);
+        if(lstcont.size() >0){
+            insert lstcont;
+        }
+        
+        return null;
+    }
+    
+    public static String accmethod2(Set<ID> acc_ID2){
+        
+        Account acc = [Select id,Name,Count_of_Contact__c from Account where ID IN :acc_ID2 ];
 
-}
+        //update part
+        Integer numberOfContacts2 = [SELECT COUNT() FROM Contact WHERE AccountId = :acc_ID2 AND Stage__c ='Closed' ];
+        List<Contact> newconlist = [SELECT ID,Name,Stage__c FROM Contact WHERE AccountId = :acc_ID2 AND Stage__c ='Pending' ];
+        Integer newvalue = numberOfContacts2 - Integer.valueOf(acc.Count_of_Contact__c) ;
+        //update account count value
+        acc.Count_of_Contact__c = newvalue;
+        
+        System.debug('new value'+ acc.Count_of_Contact__c);
+        update acc;
+        
+        
+        //update contact
+        if(newconlist.size() >0){
+            
+        }
+        return null;
+    }
+    }
