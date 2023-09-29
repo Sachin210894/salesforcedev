@@ -9,14 +9,14 @@ public class AccContactcreation {
         
         if(numberOfContacts >= acc.Count_of_Contact__c){
             con.AccountId = acc.ID;
-            con.LastName = 'demo';
+            con.LastName = 'demo' + numberOfContacts;
             con.Stage__c = 'pending';
             
         }
         else{
             // Contact con = new contact();
             con.AccountId = acc.ID;
-            con.LastName = 'demo';
+            con.LastName = 'demo' + numberOfContacts;
             con.Stage__c = 'open';
             
         }
@@ -34,6 +34,8 @@ public class AccContactcreation {
     
     public static String accmethod2(Set<ID> acc_ID2){
         
+        
+        List<contact> conupdate = new List<contact>();
         Account acc = [Select id,Name,Count_of_Contact__c from Account where ID IN :acc_ID2 ];
 
         //update part
@@ -49,8 +51,12 @@ public class AccContactcreation {
         
         //update contact
         if(newconlist.size() >0){
-            
+            for(Contact concall : newconlist){
+                concall.Stage__c =' Open';
+                conupdate.add(concall);
+            }
         }
+        update conupdate;
         return null;
     }
     }
