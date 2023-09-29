@@ -10,7 +10,7 @@ trigger contacttrigger on Contact (after insert,after  update) {
             }
             AccContactcreation.accmethod(accid);
         }
-    }
+    }   
     
     if (trigger.isAfter && trigger.IsUpdate) {
         //ID conID;
