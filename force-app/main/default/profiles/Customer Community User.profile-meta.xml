@@ -261,6 +261,10 @@
         <apexPage>UnderConstruction</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>demochat</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <userLicense>Customer Community</userLicense>
     <userPermissions>
         <enabled>true</enabled>
@@ -293,6 +297,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>EnableNotifications</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>FieldServiceAccess</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
