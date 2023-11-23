@@ -10,7 +10,7 @@ trigger casetrigger on Case (after insert, after update) {
         for (Case c : [SELECT Id, OwnerId, Status,Email__c, CaseNumber,	 Account.Name FROM Case WHERE Id IN:trigger.new]) {
             if (c.status == 'Response Received') {
                 User relatedCaseContact = conMap.get(c.OwnerId);
-                system.debug('Mydebug' + c.Account.Name + relatedCaseContact.name + relatedCaseContact.email + relatedCaseContact.Phone + relatedCaseContact.MobilePhone);
+                //system.debug('Mydebug' + c.Account.Name + relatedCaseContact.name + relatedCaseContact.email + relatedCaseContact.Phone + relatedCaseContact.MobilePhone);
                 
                 Messaging.SingleEmailMessage CaseNotificationmail = new Messaging.SingleEmailMessage();  
                 CaseNotificationmail.setToAddresses(new List<String> { c.Email__c });
