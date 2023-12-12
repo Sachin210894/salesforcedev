@@ -1,0 +1,28 @@
+<template>
+  <lightning-combobox
+    label="Select Form Type"
+    value={selectedFormType}
+    options={formTypeOptions}
+    onchange={handleFormTypeChange}
+  ></lightning-combobox>
+
+  <template if:true={showNameField}>
+    <lightning-input label="Name"></lightning-input>
+  </template>
+
+  <template if:true={showEmailField}>
+    <lightning-input label="Email"></lightning-input>
+  </template>
+
+  <!-- Add similar templates for other fields -->
+
+  <lightning-card title="Account List">
+    <template if:true={accountList}>
+      <ul>
+        <template for:each={accountList} for:item="account">
+          <li key={account.id}>{account.fields.Name.value}</li>
+        </template>
+      </ul>
+    </template>
+  </lightning-card>
+</template>
