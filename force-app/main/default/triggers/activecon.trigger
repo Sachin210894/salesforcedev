@@ -8,6 +8,7 @@ trigger activecon on Contact(
   after undelete
 ) {
   if (Trigger.isBefore) {
+    system.debug('message trigger');
   } else if (Trigger.isAfter) {
     if (Trigger.isUpdate) {
       List<String> accountIdList = new List<String>();
