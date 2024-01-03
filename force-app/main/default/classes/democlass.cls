@@ -11,5 +11,6 @@ public with sharing class democlass {
    * @author ChangeMeIn@UserSettingsUnder.SFDoc | 12-28-2023
    **/
   public democlass() {
+    System.debug('New log');
   }
 }
