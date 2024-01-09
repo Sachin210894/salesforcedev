@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-09-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-card title="Joke">
+    <p class="slds-p-horizontal_small">{newjoke}</p>
+    <p class="slds-p-horizontal_small">{newjoke2}</p>
+
+    <lightning-button
+      variant="brand-outline"
+      label="New Joke"
+      title="Primary action with lighter look"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+    <lightning-button
+      variant="brand-outline"
+      label="Clear"
+      title="Primary action with lighter look"
+      onclick={clear}
+      class="slds-m-left_x-small"
+    ></lightning-button>
+  </lightning-card>
+</template>
