@@ -8,11 +8,16 @@
 <template>
   <div style="height: 300px">
     <!-- sldsValidatorIgnoreNextLine -->
+    <lightning-button
+      label="Get selected"
+      onclick={getSelected}
+    ></lightning-button>
+
     <lightning-datatable
       key-field="id"
       data={data}
       columns={columns}
-      onrowaction={handleRowAction}
+      onclick={handleRowAction}
     >
     </lightning-datatable>
   </div>
