@@ -26,17 +26,16 @@ export default class Selectedvalue extends LightningElement {
     this.data = generateData({ amountOfRecords: 100 });
   }
 
-  handleRowAction(event) {
-    console.log("====>actionName");
-    const actionName = event.detail.action.name;
-    console.log("====>actionName", actionName);
+  handleRowAction() {
+    var el = this.template.querySelector("lightning-datatable");
+    var selected = el.getSelectedRows();
+    console.log("new selected", selected);
 
-    const row = event.detail.row;
-    console.log(
-      "====>selectedRows",
-      this.template.querySelector("lightning-datatable").getSelectedRows()
-    );
-    console.log("====>row", row);
+    this.record = JSON.stringify(selected);
+    console.log(el);
+    console.log("new Debug", this.record);
+
+    console.log("new Debug -=-1", this.record.name);
 
     /* switch (actionName) {
             case 'delete':
