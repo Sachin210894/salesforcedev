@@ -2,7 +2,7 @@
  * @description       :
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             :
- * @last modified on  : 01-24-2024
+ * @last modified on  : 01-25-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
  **/
 @RestResource(urlMapping='/Customfields')
@@ -27,6 +27,26 @@ global class Createfields {
     );
     request.setMethod('POST');
     if (fieldType == 'Text') {
+      request.setBody(
+        '{"Metadata" : {"type" : "' +
+          fieldType +
+          '","description" : "' +
+          description +
+          '", "inlineHelpText" : "' +
+          inlineHelpText +
+          '","label" : "' +
+          label +
+          '","length" : ' +
+          length +
+          ',"required" : ' +
+          Required +
+          '}, "FullName" : "' +
+          ObjectName +
+          '.' +
+          label.replace(' ', '_') +
+          '__c"}'
+      );
+    } else if (fieldType == 'Number') {
       request.setBody(
         '{"Metadata" : {"type" : "' +
           fieldType +
