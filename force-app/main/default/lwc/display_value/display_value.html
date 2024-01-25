@@ -1,0 +1,13 @@
+<template>
+  <lightning-combobox
+    label="Select Form Type"
+    value={selectedFormType}
+    options={formTypeOptions}
+    onchange={handleFormTypeChange}
+  ></lightning-combobox>
+
+  <lightning-input label="Field Name" onchange={displayfield}></lightning-input>
+  <lightning-input label="Label" value={labelValue}></lightning-input>
+
+  <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+</template>

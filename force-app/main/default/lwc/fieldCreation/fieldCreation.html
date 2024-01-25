@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-24-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-combobox
+    label="Select SObject"
+    value={selectedSObject}
+    options={sObjectOptions}
+    onchange={handleSObjectChange}
+  >
+  </lightning-combobox>
+  <c-display_value></c-display_value>
+</template>
