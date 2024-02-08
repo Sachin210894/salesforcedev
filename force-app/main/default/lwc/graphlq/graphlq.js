@@ -58,5 +58,7 @@ export default class Graphlq extends LightningElement {
 
   handleMinAmountChange(event) {
     this.minAmount = event.detail.value;
+    console.log("debug==>", this.minAmount);
+    console.log("records==>", this.records);
   }
 }
