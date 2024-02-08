@@ -1,0 +1,44 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-08-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+  <!-- <div class="slds-var-m-horizontal_medium">
+          <template lwc:if={results}>
+            <template for:each={results} for:item="account">
+              <div key={account.Id}>
+                <lightning-card icon-name="standard:account">
+                  <h1 slot="title">{account.Name.value}</h1>
+                </lightning-card>
+              </div>
+            </template>
+          </template>
+        </div>-->
+
+  <div class="slds-var-m-horizontal_medium">
+    <lightning-combobox
+      name="minAmount"
+      label="Amount"
+      value={minAmount}
+      placeholder="Select a minimum amount"
+      options={minAmounts}
+      onchange={handleMinAmountChange}
+    >
+    </lightning-combobox>
+
+    <template lwc:if={records}>
+      <template for:each={records} for:item="account">
+        <div class="card-spacer" key={account.Id}>
+          <lightning-card icon-name="standard:account">
+            <h1 slot="title">{account.Name.value}</h1>
+            {account.AnnualRevenue.displayValue}
+          </lightning-card>
+        </div>
+      </template>
+    </template>
+  </div>
+</template>
