@@ -1,0 +1,159 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "My Profile",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"70a4ecbb-0436-438c-9828-bb2131e54358\",\"columns\":[{\"UUID\":\"b0dac170-fc91-4ac7-bbf0-6f56917ccb18\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "backgroundColor": "",
+                        "dxpStyle": {},
+                        "paddingHorizontal": "none",
+                        "paddingVertical": "small",
+                        "text": "My Profile & Password",
+                        "textAlign": "left",
+                        "textDecoration": "{\"bold\": true}",
+                        "textDisplayInfo": "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+                      },
+                      "definition": "dxp_base:textBlock",
+                      "id": "60a7240b-7c0c-4658-887d-25c432fac97f",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "b0dac170-fc91-4ac7-bbf0-6f56917ccb18",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "70a4ecbb-0436-438c-9828-bb2131e54358",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"544a6ecb-1d3e-4a00-b17f-76c09dfef22e\",\"columns\":[{\"UUID\":\"570e2217-307e-4862-8c54-a17a7814968a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"0ae9e5ea-3fd1-4048-bd9d-7d449b176ba1\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {}
+                      },
+                      "definition": "c:cprofile",
+                      "id": "1f33939d-928b-4cf5-b7be-2ac79eedf9ed",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "570e2217-307e-4862-8c54-a17a7814968a",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                },
+                {
+                  "id": "0ae9e5ea-3fd1-4048-bd9d-7d449b176ba1",
+                  "name": "col2",
+                  "title": "Column 2",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "544a6ecb-1d3e-4a00-b17f-76c09dfef22e",
+              "type": "component"
+            },
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"e50ab346-6f01-4a9c-a8b6-eefeebe2f0f9\",\"columns\":[{\"UUID\":\"11ae3696-9f87-472e-a10a-ea6c0e86af97\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "callToActionButtonLabel": "Add to Cart",
+                        "displayName": true,
+                        "displayPrice": true,
+                        "displayQuantitySelectorAndCallToActionButton": false,
+                        "dxpStyle": {},
+                        "headerText": "Recently Viewed",
+                        "manualCategoryId": "",
+                        "manualProductId": "",
+                        "maxProductsVisible": "4",
+                        "minProductsVisible": "3",
+                        "priceToDisplay": "strikethrough",
+                        "quantitySelectorLabel": "qty",
+                        "selectedAnchorType": "noContext",
+                        "selectedRecNameCategoryManual": "most-viewed-by-category",
+                        "selectedRecNameCategoryRecord": "most-viewed-by-category",
+                        "selectedRecNameNoContext": "recently-viewed",
+                        "selectedRecNameProductCart": "similar-products",
+                        "selectedRecNameProductManual": "similar-products",
+                        "selectedRecNameProductRecord": "similar-products"
+                      },
+                      "definition": "b2c_lite_commerce:einsteinProductRecommendations",
+                      "id": "e2720341-a62b-417b-af0c-54176f3a5a7f",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "11ae3696-9f87-472e-a10a-ea6c0e86af97",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "e50ab346-6f01-4a9c-a8b6-eefeebe2f0f9",
+              "type": "component"
+            }
+          ],
+          "id": "8bb1b15c-924b-4d73-bd50-2d5a3447ef83",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "dxpStyle": {},
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "9b50e80b-a8c5-460e-9cbc-eb5188796889",
+              "type": "component"
+            }
+          ],
+          "id": "e18b2281-f1da-4069-a9fe-46affd2073ba",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "cf874281-0727-4f25-a4ec-4d0acef5bdc4",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "MyAccount",
+    "viewType": "my-profile"
+  }
+}

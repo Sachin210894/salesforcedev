@@ -1,0 +1,910 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Checkout",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"73018982-2b53-4545-b299-09591b25f163\",\"columns\":[{\"UUID\":\"c5036b54-1b5c-4369-ace7-9d535308945c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"7e12da15-3f7c-4027-8b58-4f567f559ac3\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "a11yLoadingIndicator": false,
+                        "checkoutDetails": "{!Checkout.Details}",
+                        "checkoutSessionError": "{!Checkout.SessionError}",
+                        "clientErrors": true,
+                        "dxpStyle": {},
+                        "integrationErrors": true,
+                        "sessionErrors": true,
+                        "typeCheckoutFailure": true,
+                        "typeInventoryFailure": true,
+                        "typeOther": true,
+                        "typePaymentFailure": true,
+                        "typeShippingFailure": true,
+                        "visibleLoadingIndicator": false
+                      },
+                      "definition": "commerce_builder:checkoutNotification",
+                      "id": "700c6272-7efd-4f73-8abd-2a529848f0b4",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "dxpStyle": {}
+                      },
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "dxpStyle": {}
+                              },
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "backgroundColor": "",
+                                        "dxpStyle": {},
+                                        "paddingHorizontal": "none",
+                                        "paddingVertical": "none",
+                                        "text": "Contact Information",
+                                        "textAlign": "left",
+                                        "textDecoration": "{\"bold\": true}",
+                                        "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                      },
+                                      "definition": "dxp_base:textBlock",
+                                      "id": "20544eaa-f44b-4dee-896e-fd4f22946dd2",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "dc9152dc-6eec-4a3b-8250-b2bdc03b9cba",
+                                  "name": "title",
+                                  "title": "title",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Change",
+                                        "variant": "",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "236a7581-70b0-40d0-91bd-b94b13d7a061",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "9efcd82a-67db-4cb5-952c-39e0e25fd74e",
+                                  "name": "edit",
+                                  "title": "edit",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "checkoutDetails": "{!Checkout.Details}",
+                                        "dxpStyle": {},
+                                        "emailLabel": "Email",
+                                        "phoneNumberLabel": "Phone Number",
+                                        "phoneNumberPlaceholderText": ""
+                                      },
+                                      "definition": "commerce_builder:checkoutContactInfo",
+                                      "id": "abb9756a-9f43-4ff3-9a2b-8cc7d99eda37",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "68c8693b-2720-4c97-89d4-f261a02676a7",
+                                  "name": "content",
+                                  "title": "content",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Proceed",
+                                        "variant": "primary",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "97414fa7-9d84-4592-85eb-d6cdce5414dd",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "a2a9a07d-5365-4a9b-a090-987444c88b92",
+                                  "name": "proceed",
+                                  "title": "proceed",
+                                  "type": "region"
+                                }
+                              ],
+                              "definition": "commerce_unified_checkout:checkoutSectionContactInformation",
+                              "id": "ed8e2821-fc34-4cdf-9269-96b7407708b4",
+                              "type": "component"
+                            },
+                            {
+                              "attributes": {
+                                "dxpStyle": {}
+                              },
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "backgroundColor": "",
+                                        "dxpStyle": {},
+                                        "paddingHorizontal": "none",
+                                        "paddingVertical": "none",
+                                        "text": "Shipping",
+                                        "textAlign": "left",
+                                        "textDecoration": "{\"bold\": true}",
+                                        "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                      },
+                                      "definition": "dxp_base:textBlock",
+                                      "id": "121dc691-17e1-4455-a06b-48585e72a2da",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "d69b6e80-af2d-4d81-8ff5-06283dd7c3c1",
+                                  "name": "title",
+                                  "title": "title",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Change",
+                                        "variant": "",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "b701d769-40fd-4d6c-be9e-24aafa34f51c",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "c01d4f2a-7a39-46a1-a060-cf3f6a1558a5",
+                                  "name": "edit",
+                                  "title": "edit",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "checkoutAddresses": "{!Checkout.Addresses}",
+                                        "checkoutDetails": "{!Checkout.Details}",
+                                        "componentHeaderEditAddressLabel": "Edit Address",
+                                        "dxpStyle": {},
+                                        "editAddressLabel": "Edit Address",
+                                        "makeDefaultAddressLabel": "Make this my default address",
+                                        "newAddressButtonLabel": "New Address",
+                                        "shippingAddressLimit": "6",
+                                        "shippingAddressLimitIncrease": "6",
+                                        "showCompanyName": false,
+                                        "showMoreButtonLabel": "Show More",
+                                        "summaryModeEnabled": true
+                                      },
+                                      "definition": "commerce_builder:checkoutDeliveryAddress",
+                                      "id": "e7ba0abc-8ede-46ef-a2ba-157cfa7346dc",
+                                      "type": "component"
+                                    },
+                                    {
+                                      "attributes": {
+                                        "checkoutDetails": "{!Checkout.Details}",
+                                        "dxpStyle": {},
+                                        "placeholderLabel": ""
+                                      },
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "backgroundColor": "",
+                                                "dxpStyle": {},
+                                                "paddingHorizontal": "none",
+                                                "paddingVertical": "medium",
+                                                "text": "Shipping Instructions",
+                                                "textAlign": "left",
+                                                "textDecoration": "{\"bold\": true}",
+                                                "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                              },
+                                              "definition": "dxp_base:textBlock",
+                                              "id": "3ac1f6dd-3d20-480b-83dc-d0dfc7e0d44e",
+                                              "type": "component"
+                                            }
+                                          ],
+                                          "id": "0038ddd2-95e6-4536-8b6d-b8cc14f7d3f9",
+                                          "name": "heading",
+                                          "title": "heading",
+                                          "type": "region"
+                                        }
+                                      ],
+                                      "definition": "commerce_builder:checkoutShippingInstructions",
+                                      "id": "8df3d810-546b-4822-add2-3c442d27fa78",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "7643fa54-d14a-4ce4-ac06-49613b03e880",
+                                  "name": "content",
+                                  "title": "content",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Proceed",
+                                        "variant": "primary",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "03a568fa-3a6e-4b47-b9b0-2cb21638f84e",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "bed169d5-0bb3-4507-8d9e-9fab84174998",
+                                  "name": "proceed",
+                                  "title": "proceed",
+                                  "type": "region"
+                                }
+                              ],
+                              "definition": "commerce_unified_checkout:checkoutSectionShipping",
+                              "id": "3db6a592-a82d-4bb9-80fb-98847287d9f6",
+                              "type": "component"
+                            },
+                            {
+                              "attributes": {
+                                "dxpStyle": {}
+                              },
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "backgroundColor": "",
+                                        "dxpStyle": {},
+                                        "paddingHorizontal": "none",
+                                        "paddingVertical": "none",
+                                        "text": "Delivery Options",
+                                        "textAlign": "left",
+                                        "textDecoration": "{\"bold\": true}",
+                                        "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                      },
+                                      "definition": "dxp_base:textBlock",
+                                      "id": "08647d7e-120f-426d-9ff1-091cd88d48df",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "f7506d0b-ee45-4e86-8956-044d7708ee8e",
+                                  "name": "title",
+                                  "title": "title",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Change",
+                                        "variant": "",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "737fcc79-955d-430d-8bf1-0438bf33b55f",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "05a4398a-9ec2-41ed-b9c0-c3acdcd61d65",
+                                  "name": "edit",
+                                  "title": "edit",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "checkoutDetails": "{!Checkout.Details}",
+                                        "dxpStyle": {}
+                                      },
+                                      "definition": "commerce_builder:checkoutDeliveryMethod",
+                                      "id": "bc6ded56-cad4-42dd-866b-9007d54637e7",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "e91c9b67-0d87-4aaf-92c6-77063e80da8d",
+                                  "name": "content",
+                                  "title": "content",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Proceed",
+                                        "variant": "primary",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "cb4615a5-1951-4863-81fc-eb452db04dca",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "7f020db7-8f76-4987-b09e-0c10fd383e6c",
+                                  "name": "proceed",
+                                  "title": "proceed",
+                                  "type": "region"
+                                }
+                              ],
+                              "definition": "commerce_unified_checkout:checkoutSectionDelivery",
+                              "id": "21305787-d9b5-480a-978c-8f25ec275013",
+                              "type": "component"
+                            },
+                            {
+                              "attributes": {
+                                "dxpStyle": {}
+                              },
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "backgroundColor": "",
+                                        "dxpStyle": {},
+                                        "paddingHorizontal": "none",
+                                        "paddingVertical": "none",
+                                        "text": "Payment",
+                                        "textAlign": "left",
+                                        "textDecoration": "{\"bold\": true}",
+                                        "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                      },
+                                      "definition": "dxp_base:textBlock",
+                                      "id": "168150bb-df95-4214-bcde-394d3a50959d",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "1503c8b2-814e-4271-8b38-9d3364ef7af6",
+                                  "name": "title",
+                                  "title": "title",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "buttonBorderRadius": 0,
+                                        "dxpStyle": {},
+                                        "size": "standard",
+                                        "text": "Change",
+                                        "variant": "",
+                                        "width": "standard"
+                                      },
+                                      "definition": "commerce_builder:actionButton",
+                                      "id": "9d0c4720-b105-4684-ac72-c78952ba0099",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "3fb0dd88-ed56-4277-bbd4-71850aaa04be",
+                                  "name": "edit",
+                                  "title": "edit",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "checkoutDetails": "{!Checkout.Details}",
+                                        "dxpStyle": {}
+                                      },
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "backgroundColor": "",
+                                                "dxpStyle": {},
+                                                "paddingHorizontal": "none",
+                                                "paddingVertical": "medium",
+                                                "text": "Credit Card",
+                                                "textAlign": "left",
+                                                "textDecoration": "{\"bold\": true}",
+                                                "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                              },
+                                              "definition": "dxp_base:textBlock",
+                                              "id": "ff33f43b-f680-46b9-b7b4-0bdbf3626941",
+                                              "type": "component"
+                                            }
+                                          ],
+                                          "id": "78063ef7-81a3-421d-8cf5-129b582b4118",
+                                          "name": "heading",
+                                          "title": "heading",
+                                          "type": "region"
+                                        },
+                                        {
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "billingAddressSameAsShippingAddressLabel": "Same as shipping address",
+                                                "checkoutDetails": "{!Checkout.Details}",
+                                                "dxpStyle": {}
+                                              },
+                                              "children": [
+                                                {
+                                                  "children": [
+                                                    {
+                                                      "attributes": {
+                                                        "backgroundColor": "",
+                                                        "dxpStyle": {},
+                                                        "paddingHorizontal": "none",
+                                                        "paddingVertical": "medium",
+                                                        "text": "Billing Address",
+                                                        "textAlign": "left",
+                                                        "textDecoration": "{\"bold\": true}",
+                                                        "textDisplayInfo": "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+                                                      },
+                                                      "definition": "dxp_base:textBlock",
+                                                      "id": "056274bd-c2b2-46ff-abe4-bcd7bba5da21",
+                                                      "type": "component"
+                                                    }
+                                                  ],
+                                                  "id": "78b9d4ee-c635-4b9e-b96f-2ecfb05da811",
+                                                  "name": "heading",
+                                                  "title": "heading",
+                                                  "type": "region"
+                                                }
+                                              ],
+                                              "definition": "commerce_builder:checkoutBillingInfo",
+                                              "id": "ec9fea3c-321f-4d82-957e-2c678154df3e",
+                                              "type": "component"
+                                            }
+                                          ],
+                                          "id": "c913337e-e814-484a-885f-f1a36cf84361",
+                                          "name": "billingAddress",
+                                          "title": "billingAddress",
+                                          "type": "region"
+                                        }
+                                      ],
+                                      "definition": "commerce_builder:checkoutPayment",
+                                      "id": "cb72bca2-6e7e-47d2-b5eb-8ae23c1e932b",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "c6c8f3de-2d12-476a-a3b1-c50c7e2aba21",
+                                  "name": "content",
+                                  "title": "content",
+                                  "type": "region"
+                                },
+                                {
+                                  "id": "4f2379fb-66cb-4eca-a180-2a79d043225b",
+                                  "name": "proceed",
+                                  "title": "proceed",
+                                  "type": "region"
+                                }
+                              ],
+                              "definition": "commerce_unified_checkout:checkoutSectionPayment",
+                              "id": "1587a259-b731-4808-aa2e-5dac8b80404c",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "e6d5d2ae-2e2f-45c1-947b-dd71ec84c47e",
+                          "name": "content",
+                          "title": "content",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "commerce_builder:checkoutLayoutOnePage",
+                      "id": "58a3b791-b463-4a13-a907-1b4e5ece1934",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "c5036b54-1b5c-4369-ace7-9d535308945c",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                },
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "discountAmountTextSize": "small",
+                        "dxpStyle": {},
+                        "originalTextColor": "rgb(116, 116, 116)",
+                        "originalTextSize": "small",
+                        "shippingTextSize": "small",
+                        "showDiscountAmount": true,
+                        "showOriginalPrice": false,
+                        "showShippingPrice": true,
+                        "showSubtotalPrice": true,
+                        "showTaxIncludedLabel": false,
+                        "showTaxPrice": true,
+                        "subtotalTextSize": "small",
+                        "taxTextSize": "small",
+                        "totalTextSize": "medium"
+                      },
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "dxpStyle": {},
+                                "expandByDefault": false,
+                                "icon": "arrow",
+                                "iconAlignment": "left"
+                              },
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "backgroundColor": "",
+                                        "dxpStyle": {},
+                                        "paddingHorizontal": "none",
+                                        "paddingVertical": "none",
+                                        "text": "Order Details",
+                                        "textAlign": "left",
+                                        "textDecoration": "{\"bold\": true}",
+                                        "textDisplayInfo": "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+                                      },
+                                      "definition": "dxp_base:textBlock",
+                                      "id": "96456ff8-965f-432d-851f-263da9d26064",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "ce197951-ef01-450d-b71c-856711973bc9",
+                                  "name": "title",
+                                  "title": "title",
+                                  "type": "region"
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "actualPriceFontSize": "medium",
+                                        "currencyIsoCode": "{!Cart.Details.currencyIsoCode}",
+                                        "displayShowMoreItems": true,
+                                        "dxpStyle": {},
+                                        "hasNextPageItems": "{!Cart.Pagination.hasNextPage}",
+                                        "hideQuantitySelector": true,
+                                        "incrementValueGuideText": "Sold in increments of {0}",
+                                        "items": "{!Cart.Items}",
+                                        "maximumValueGuideText": "Maximum quantity is {0}",
+                                        "minimumValueGuideText": "Minimum quantity is {0}",
+                                        "originalPriceFontColor": "rgb(116, 116, 116)",
+                                        "originalPriceFontSize": "small",
+                                        "pricePerUnitFontSize": "medium",
+                                        "promotionsAppliedSavingsButtonText": "Saved {amount}",
+                                        "removeProductLinks": false,
+                                        "showActualPrice": true,
+                                        "showCountInName": true,
+                                        "showOriginalPrice": true,
+                                        "showPricePerUnit": false,
+                                        "showProductImage": true,
+                                        "showProductVariants": true,
+                                        "showPromotions": false,
+                                        "showRemoveItem": false,
+                                        "showSku": false,
+                                        "showTotalPrices": true,
+                                        "skuLabel": "SKU# {0}"
+                                      },
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "backgroundColor": "",
+                                                "dxpStyle": {},
+                                                "paddingHorizontal": "none",
+                                                "paddingVertical": "none",
+                                                "text": "Show More",
+                                                "textAlign": "left",
+                                                "textDecoration": "{}",
+                                                "textDisplayInfo": "{\"textStyle\": \"body-regular\"}"
+                                              },
+                                              "definition": "dxp_base:textBlock",
+                                              "id": "56bc74fd-f449-4631-a1bd-9f1457b742de",
+                                              "type": "component"
+                                            }
+                                          ],
+                                          "id": "98e75b6c-dd94-4799-910f-5d93a8f245a7",
+                                          "name": "showMore",
+                                          "title": "showMore",
+                                          "type": "region"
+                                        }
+                                      ],
+                                      "definition": "commerce_builder:cartItems",
+                                      "id": "68c8327a-7bf8-418b-b7cb-604cff7cc3be",
+                                      "type": "component"
+                                    }
+                                  ],
+                                  "id": "d30af84c-0929-4653-891e-fcd2a4282d50",
+                                  "name": "content",
+                                  "title": "content",
+                                  "type": "region"
+                                }
+                              ],
+                              "definition": "dxp_content_layout:expandableSection",
+                              "id": "c677b5a2-99a7-475e-a6dc-a6efd6598987",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "7bf16db5-cbd3-4114-bd24-e54ceadde41a",
+                          "name": "headerText",
+                          "title": "Heading",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Original Price",
+                                "textAlign": "left",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "e08c4a8c-3027-4615-aeae-81f7bb0f4685",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "06817715-1750-4b2f-a2f7-4f63315695b4",
+                          "name": "originalPriceLabel",
+                          "title": "originalPriceLabel",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Promotions",
+                                "textAlign": "left",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "d8edd1b8-3487-4be4-9704-556adebaa38d",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "2990e364-7bdf-4d96-a9f3-5658ccfe9b6b",
+                          "name": "promotionsLabel",
+                          "title": "Promotions Label",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Shipping",
+                                "textAlign": "left",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "1ce934b1-e834-4975-903e-eb6473cd2661",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "cd3a2a61-3679-438d-ba1c-49f372afef68",
+                          "name": "shippingLabel",
+                          "title": "Shipping Label",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Subtotal",
+                                "textAlign": "left",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "7f99132f-17de-4e6d-8c92-8d696a9fbedc",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "2c8e6eab-4c91-4a50-aaf5-cd3b4ca831e2",
+                          "name": "subtotalLabel",
+                          "title": "Subtotal Label",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Tax included",
+                                "textAlign": "right",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "a3fefb31-0b76-4aa3-8307-3e8aba8b1b7f",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "c3e856e4-08b3-4735-963c-22e495c5584e",
+                          "name": "taxIncludedLabel",
+                          "title": "Tax Included Label",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Tax",
+                                "textAlign": "left",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "d8d85f1a-410c-4037-8afa-d6aa5a7a5795",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "f64fd7cd-d9a2-46ff-8b67-3b9e76ff649f",
+                          "name": "taxLabel",
+                          "title": "Tax Label",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Total",
+                                "textAlign": "left",
+                                "textDecoration": "{\"bold\": true}",
+                                "textDisplayInfo": "{ \"headingTag\": \"p\", \"textStyle\": \"heading-small\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "4c9d991e-1210-476c-8c9f-46d561d387b8",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "1993a58a-0401-429d-a6fc-0ddb1ca5e15f",
+                          "name": "totalLabel",
+                          "title": "Total Label",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "commerce_builder:cartSummary",
+                      "id": "757b5d75-dfcc-4cea-ae04-575f5c0b293b",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "dxpStyle": {}
+                      },
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "alignment": "center",
+                                "buttonBorderRadius": 0,
+                                "checkoutDetails": "{!Checkout.Details}",
+                                "dxpStyle": {},
+                                "size": "standard",
+                                "text": "Place Order",
+                                "variant": "primary",
+                                "width": "stretch"
+                              },
+                              "definition": "commerce_builder:checkoutPlaceOrder",
+                              "id": "260b3e74-ab61-41e1-ae85-c9458d18dd1b",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "46fdc703-d9be-4a8d-9909-e712a0de8987",
+                          "name": "content",
+                          "title": "content",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "commerce_builder:stickyContainer",
+                      "id": "c39920ed-a954-4b33-9829-ff7793945f00",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "7e12da15-3f7c-4027-8b58-4f567f559ac3",
+                  "name": "col2",
+                  "title": "Column 2",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "73018982-2b53-4545-b299-09591b25f163",
+              "type": "component"
+            }
+          ],
+          "id": "82df0503-06c2-4369-98df-41643392b856",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "dxpStyle": {},
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "ad613eb3-57ce-4e8d-a44c-a00852e1e592",
+              "type": "component"
+            }
+          ],
+          "id": "292fbf8e-1636-4ae2-87c1-2e99e3bd114e",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "3120e969-d2eb-4107-aab7-13770b5999a3",
+      "type": "component"
+    },
+    "dataProviders": [
+      {
+        "definition": "sfdc_cms__commerceCheckoutDataProvider",
+        "sfdcExpressionKey": "Checkout",
+        "attributes": {}
+      }
+    ],
+    "themeLayoutType": "Checkout",
+    "viewType": "current-checkout"
+  }
+}

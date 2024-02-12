@@ -1,0 +1,140 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Split Shipment",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"7726423c-4348-49f7-ada5-f16ea22a78fb\",\"columns\":[{\"UUID\":\"3ae6c49d-0a5e-4ced-a6a8-bc19c65108b9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "isLinkable": false,
+                                "linkAssistiveText": "",
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Split Shipment",
+                                "textAlign": "left",
+                                "textDecoration": "{\"bold\": true}",
+                                "textDisplayInfo": "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "2bb460f5-4bf2-429c-9400-7fffb7ac7676",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "c1b6a514-8da3-43a0-b350-38f774ac6821",
+                          "name": "splitShipmentTitle",
+                          "title": "splitShipmentTitle",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "buttonBorderRadius": 4,
+                                "size": "standard",
+                                "text": "Save & Checkout",
+                                "variant": "primary",
+                                "width": "stretch"
+                              },
+                              "definition": "commerce_builder:actionButton",
+                              "id": "9733f890-3e57-442d-9732-51d04639236f",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "0ed6ad3b-ad55-4697-baad-f592df485653",
+                          "name": "saveAndCheckoutButton",
+                          "title": "saveAndCheckoutButton",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "commerce_builder:splitShipmentHeader",
+                      "id": "29500e7e-4262-4d0d-bc08-81911d1015f4",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "addresses": "{!SplitShipment.Addresses.items}",
+                        "deliveryGroups": "{!SplitShipment.DeliveryGroups.items}",
+                        "incrementValueGuideText": "Sold in increments of {0}",
+                        "maximumValueGuideText": "Maximum quantity is {0}",
+                        "minimumValueGuideText": "Minimum quantity is {0}",
+                        "priceTextSize": "small",
+                        "products": "{!SplitShipment.Cart.items}",
+                        "showProductImage": true,
+                        "showProductVariants": true,
+                        "showSku": false,
+                        "skuLabel": "SKU# {0}",
+                        "splitShipPagination": "{!SplitShipment.Cart.pagination}"
+                      },
+                      "definition": "commerce_builder:splitShipmentCartContents",
+                      "id": "c9f36f80-ee72-4c21-8751-1a85602388c7",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "3ae6c49d-0a5e-4ced-a6a8-bc19c65108b9",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "7726423c-4348-49f7-ada5-f16ea22a78fb",
+              "type": "component"
+            }
+          ],
+          "id": "92e60aa7-7898-4df8-ae84-d2d47c815a87",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "c11820dc-866e-4bde-acc2-4c34101cc744",
+              "type": "component"
+            }
+          ],
+          "id": "29555a48-9906-4768-8177-cef507c6d5dc",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "28b2d53d-4848-43c4-8938-47aea4735f9c",
+      "type": "component"
+    },
+    "dataProviders": [
+      {
+        "definition": "sfdc_cms__commerceSplitShipmentDataProvider",
+        "sfdcExpressionKey": "SplitShipment",
+        "attributes": {}
+      }
+    ],
+    "themeLayoutType": "Checkout",
+    "viewType": "split-shipment"
+  }
+}

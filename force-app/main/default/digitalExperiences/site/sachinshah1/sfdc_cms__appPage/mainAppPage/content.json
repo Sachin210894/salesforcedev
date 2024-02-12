@@ -1,0 +1,11 @@
+{
+  "type": "sfdc_cms__appPage",
+  "title": "main",
+  "contentBody": {
+    "currentThemeId": "Build_Your_Own_LWR",
+    "headMarkup": "",
+    "isLockerServiceEnabled": true,
+    "isRelaxedCSPLevel": true,
+    "templateName": "talon-template-byo"
+  }
+}

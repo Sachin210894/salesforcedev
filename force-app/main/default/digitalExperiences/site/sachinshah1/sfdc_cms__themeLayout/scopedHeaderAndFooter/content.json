@@ -1,0 +1,171 @@
+{
+  "type": "sfdc_cms__themeLayout",
+  "title": "Scoped Header and Footer",
+  "contentBody": {
+    "component": {
+      "attributes": {},
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"87e7d715-848d-4fe8-989b-116e6826e030\",\"columns\":[{\"UUID\":\"fa0134fa-f06e-41ad-b96d-43272ccac10c\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "deploymentName": "Chat_Online",
+                        "dxpStyle": {},
+                        "hideChatButtonOnLoad": "Default",
+                        "scrtUrl": "https://sachincpq-dev-ed.develop.my.salesforce-scrt.com",
+                        "siteEndpoint": "https://sachincpq-dev-ed.develop.my.site.com/ESWChatOnline1696327896060"
+                      },
+                      "definition": "experience_messaging:embeddedMessaging",
+                      "id": "2e13aadd-c48c-4966-bd76-d2f0517c487b",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "fa0134fa-f06e-41ad-b96d-43272ccac10c",
+                  "name": "headerSection",
+                  "title": "Theme Header",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "87e7d715-848d-4fe8-989b-116e6826e030",
+              "type": "component"
+            }
+          ],
+          "id": "879ee2dc-abdd-45f2-afe7-8f1df8733481",
+          "name": "header",
+          "title": "Theme Header",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"28925445-0225-4eb6-a9d8-1355bd043051\",\"columns\":[{\"UUID\":\"73729394-6d9b-4d83-b128-a33793b73210\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "classNames": "",
+                        "dxpStyle": {},
+                        "regionCount": "4",
+                        "regionSizing": "2,4,4,2",
+                        "stackRegions": "On Mobile and Tablet",
+                        "verticalAlignment": "Top"
+                      },
+                      "children": [
+                        {
+                          "id": "c288b9c8-e656-40fb-85d2-f4080c961232",
+                          "name": "region1",
+                          "title": "region1",
+                          "type": "region"
+                        },
+                        {
+                          "id": "694bea9a-59fa-4af7-a36a-b7401ccfe358",
+                          "name": "region2",
+                          "title": "region2",
+                          "type": "region"
+                        },
+                        {
+                          "id": "41b875f8-8518-436c-b3c6-7f53b2f08872",
+                          "name": "region3",
+                          "title": "region3",
+                          "type": "region"
+                        },
+                        {
+                          "id": "e2295381-edb3-47de-817d-9fbfdf8d704f",
+                          "name": "region4",
+                          "title": "region4",
+                          "type": "region"
+                        },
+                        {
+                          "id": "36ddc065-27ba-46e2-97b0-06dbd8821f75",
+                          "name": "region5",
+                          "title": "region5",
+                          "type": "region"
+                        },
+                        {
+                          "id": "26bab84d-0bc3-43b1-8c04-8b61fa9e445b",
+                          "name": "region6",
+                          "title": "region6",
+                          "type": "region"
+                        },
+                        {
+                          "id": "78ff87ff-eb69-470b-ae00-6b6a263c4e1a",
+                          "name": "region7",
+                          "title": "region7",
+                          "type": "region"
+                        },
+                        {
+                          "id": "5b9de23e-3f76-4f6b-8d5e-79814ca594cb",
+                          "name": "region8",
+                          "title": "region8",
+                          "type": "region"
+                        },
+                        {
+                          "id": "2e7b6ac5-a4d9-45dd-96b9-278c976e0a10",
+                          "name": "region9",
+                          "title": "region9",
+                          "type": "region"
+                        },
+                        {
+                          "id": "2b7e3de6-a2bd-427b-a1e5-f6b94a73c731",
+                          "name": "region10",
+                          "title": "region10",
+                          "type": "region"
+                        },
+                        {
+                          "id": "caa6e688-d017-44ae-a9db-717206963bcb",
+                          "name": "region11",
+                          "title": "region11",
+                          "type": "region"
+                        },
+                        {
+                          "id": "f389644d-0ccc-428e-9751-107e800e029c",
+                          "name": "region12",
+                          "title": "region12",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "flexi_grid:flexiGridLayout",
+                      "id": "540d32a9-d76e-48a3-abf3-1e660a5db0b4",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "73729394-6d9b-4d83-b128-a33793b73210",
+                  "name": "footerSection",
+                  "title": "Theme Footer",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "28925445-0225-4eb6-a9d8-1355bd043051",
+              "type": "component"
+            }
+          ],
+          "id": "34aa582a-1999-4f0b-9d89-a3a889c820a3",
+          "name": "footer",
+          "title": "Theme Footer",
+          "type": "region"
+        }
+      ],
+      "definition": "community_byo:scopedHeaderAndFooter",
+      "id": "70a32e55-fb95-4d2a-8c27-27ef6477d3cd",
+      "type": "component"
+    }
+  }
+}

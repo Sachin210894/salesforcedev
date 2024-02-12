@@ -1,0 +1,63 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "News Detail",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"d55cf242-cb1f-4b37-824a-84005ecec8fc\",\"columns\":[{\"UUID\":\"c5793ec2-4bf6-45ba-826c-5ddb99e20a91\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "id": "c5793ec2-4bf6-45ba-826c-5ddb99e20a91",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "d55cf242-cb1f-4b37-824a-84005ecec8fc",
+              "type": "component"
+            }
+          ],
+          "id": "34f95a44-0ca3-4be9-90f6-816e3301f576",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "{!Content.contentTypeLabel}.{!Content.title}",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "65d451dd-1cbd-4516-b60f-ff3667de633a",
+              "type": "component"
+            }
+          ],
+          "id": "81ca5cf3-04dc-404d-8281-37933b049ee2",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "4f2429ac-cbf6-49c4-853e-0e794ffe97cf",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "managed-content-sfdc_cms__news"
+  }
+}

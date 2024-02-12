@@ -1,0 +1,262 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Home",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"336e43a9-f8ed-475e-8ea6-a892cb3be63e\",\"columns\":[{\"UUID\":\"48fe2a2a-d0c8-4367-b9b6-4a783cc4f614\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "backgroundColor": "",
+                        "bannerAlignment": "center",
+                        "bannerLinkAssistiveText": "",
+                        "borderColor": "",
+                        "borderRadius": 0,
+                        "borderWidth": 0,
+                        "buttonDirection": "horizontal",
+                        "buttonGroupAlignment": "center",
+                        "buttonGroupHeight": 50,
+                        "buttonGroupSpacingHorizontal": "space-evenly",
+                        "buttonGroupSpacingVertical": "space-evenly",
+                        "buttonGroupWidth": 50,
+                        "contentPadding": "none",
+                        "contentPosition": "center center",
+                        "contentWidth": 50,
+                        "dxpStyle": {},
+                        "height": 360,
+                        "imageFit": "cover",
+                        "imageInfo": "{\"imageInfoV1\":{\"url\":\"assets/images/home-sustainable.jpg\",\"altText\":\"Pods Banner\",\"contentKey\":\"\"}}",
+                        "imagePosition": "top center",
+                        "isBannerLink": false,
+                        "overlayColor": "rgba(49, 49, 49, 0.1)",
+                        "showButtons": false,
+                        "showSecondaryButton": false,
+                        "singleButtonAlignment": "center",
+                        "width": 100
+                      },
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Organic bars, gels, and drinks",
+                                "textAlign": "center",
+                                "textColor": "rgb(255, 255, 255)",
+                                "textDecoration": "{\"bold\": true}",
+                                "textDisplayInfo": "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "46ed844c-e2e5-47d8-9cd5-90ca0be9b87d",
+                              "type": "component"
+                            },
+                            {
+                              "attributes": {
+                                "backgroundColor": "",
+                                "dxpStyle": {},
+                                "paddingHorizontal": "none",
+                                "paddingVertical": "none",
+                                "text": "Expertly crafted with the finest ingredients",
+                                "textAlign": "center",
+                                "textColor": "rgb(255, 255, 255)",
+                                "textDecoration": "{}",
+                                "textDisplayInfo": "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                              },
+                              "definition": "dxp_base:textBlock",
+                              "id": "d3cfc640-ad20-4d87-a594-87024fa1b9b5",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "93273514-5886-4d50-9fc3-a5c0a9a8c074",
+                          "name": "contentRegion",
+                          "title": "Content Region",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "alignment": "center",
+                                "dxpStyle": {},
+                                "size": "standard",
+                                "stretch": "standard",
+                                "text": "Shop Now",
+                                "type": "primary",
+                                "url": "javascript:void(0)"
+                              },
+                              "definition": "dxp_base:button",
+                              "id": "9b6e5a3d-222d-4ef0-821c-b5ee6857dbbb",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "38c0d020-125b-4ef1-b41b-6f1c269cb11f",
+                          "name": "bannerPrimaryButton",
+                          "title": "Primary Button Region",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "alignment": "center",
+                                "dxpStyle": {},
+                                "size": "standard",
+                                "stretch": "standard",
+                                "text": "Contact Us",
+                                "type": "secondary"
+                              },
+                              "definition": "dxp_base:button",
+                              "id": "37a7aa8e-94b9-42dd-b68e-539388f23890",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "404a339c-1766-4cfa-ace4-284d805d6eee",
+                          "name": "bannerSecondaryButton",
+                          "title": "bannerSecondaryButton",
+                          "type": "region"
+                        },
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "dxpStyle": {}
+                              },
+                              "definition": "dxp_page_layout:placeHolder",
+                              "id": "3a375076-b5d6-411f-9ec1-6643a82c73ee",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "406e3a84-8270-44e6-b6c8-152064488278",
+                          "name": "placeholder",
+                          "title": "placeholder",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "dxp_content_layout:banner",
+                      "id": "da89a33b-e7a9-4234-8dee-5877dc035caf",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "browseStep": 3,
+                        "dxpStyle": {},
+                        "headerText": "Shop By Category",
+                        "pageSize": 6
+                      },
+                      "definition": "b2c_lite_commerce:shopCategory",
+                      "id": "e4d58365-bea4-429b-b0a6-c4ceda43b434",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "callToActionButtonLabel": "Add to Cart",
+                        "displayName": true,
+                        "displayPrice": true,
+                        "displayQuantitySelectorAndCallToActionButton": false,
+                        "dxpStyle": {},
+                        "headerText": "Top Sellers",
+                        "manualCategoryId": "",
+                        "manualProductId": "",
+                        "maxProductsVisible": "4",
+                        "minProductsVisible": "3",
+                        "priceToDisplay": "strikethrough",
+                        "quantitySelectorLabel": "qty",
+                        "selectedAnchorType": "noContext",
+                        "selectedRecNameCategoryManual": "most-viewed-by-category",
+                        "selectedRecNameCategoryRecord": "most-viewed-by-category",
+                        "selectedRecNameNoContext": "top-selling",
+                        "selectedRecNameProductCart": "similar-products",
+                        "selectedRecNameProductManual": "similar-products",
+                        "selectedRecNameProductRecord": "recently-viewed"
+                      },
+                      "definition": "b2c_lite_commerce:einsteinProductRecommendations",
+                      "id": "c67b8e40-7731-4d46-aa6f-1c857c677809",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "callToActionButtonLabel": "Add to Cart",
+                        "displayName": true,
+                        "displayPrice": true,
+                        "displayQuantitySelectorAndCallToActionButton": false,
+                        "dxpStyle": {},
+                        "headerText": "Recommendations for You",
+                        "manualCategoryId": "",
+                        "manualProductId": "",
+                        "maxProductsVisible": "4",
+                        "minProductsVisible": "3",
+                        "priceToDisplay": "strikethrough",
+                        "quantitySelectorLabel": "qty",
+                        "selectedAnchorType": "noContext",
+                        "selectedRecNameCategoryManual": "most-viewed-by-category",
+                        "selectedRecNameCategoryRecord": "most-viewed-by-category",
+                        "selectedRecNameNoContext": "personalized-for-shopper",
+                        "selectedRecNameProductCart": "similar-products",
+                        "selectedRecNameProductManual": "similar-products",
+                        "selectedRecNameProductRecord": "recently-viewed"
+                      },
+                      "definition": "b2c_lite_commerce:einsteinProductRecommendations",
+                      "id": "da25a8b3-1781-4eb8-a414-5e87f01c4222",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "48fe2a2a-d0c8-4367-b9b6-4a783cc4f614",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "336e43a9-f8ed-475e-8ea6-a892cb3be63e",
+              "type": "component"
+            }
+          ],
+          "id": "cd9be432-e957-40cf-a273-11fcc3f199c6",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "Home",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "a26c308a-147e-489c-8a58-8665aeed95ab",
+              "type": "component"
+            }
+          ],
+          "id": "9e7c1a8e-80d3-4c65-9fbd-9fb4f75a38e8",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "fb13e560-73e1-4f03-acc6-0c03e20c05ec",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "home"
+  }
+}

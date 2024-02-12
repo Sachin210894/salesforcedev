@@ -1,0 +1,13 @@
+{
+  "type": "sfdc_cms__trustedSites",
+  "title": "trustedSites",
+  "contentBody": {
+    "trustedSites": [
+      {
+        "isActive": true,
+        "source": "https://sachincpq-dev-ed.develop.my.site.com/ESWChatSupport1696326462067/assets/js/bootstrap.min.js",
+        "sourceName": "sachincpq-dev-ed.develop.my.site.com"
+      }
+    ]
+  }
+}

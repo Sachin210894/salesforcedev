@@ -1,0 +1,108 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Home",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"8b9ccace-24e1-47aa-a84f-9040d0853818\",\"columns\":[{\"UUID\":\"0aa36c21-b033-4aae-b3cd-f27eda028d67\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"28ecd2a3-8e7a-4ad9-853c-7ddcdb5d99b2\",\"columnName\":\"Column 2\",\"columnKey\":\"ba722\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {
+                          "margin": {
+                            "bottom": "50px",
+                            "left": "50px",
+                            "right": "50px",
+                            "top": "50px"
+                          }
+                        },
+                        "hideChatButtonOnLoad": "Default",
+                        "scrtUrl": "https://sachincpq-dev-ed.develop.my.salesforce-scrt.com"
+                      },
+                      "definition": "experience_messaging:embeddedMessaging",
+                      "id": "8e752b0a-363c-49da-884f-3540ee32a93e",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "richTextValue": "<div style=\"display: flex; justify-content: center; align-items: center; margin: 50px 0; flex-direction: column; text-align: center;\"><div style=\"background-image: url(assets/img/desert.svg) !important; background-size: cover; background-position: center; height: 300px; width: 100%; max-width: 600px; min-width: 300px;\"></div><h1 class=\"slds-text-heading_medium slds-p-bottom_x-small\">Start Building Your Page</h1> <div>Drag and drop a component into the content slots.</div></div>"
+                      },
+                      "definition": "community_builder:htmlEditor",
+                      "id": "838fc06c-f86d-447d-9547-effeca87c311",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "0aa36c21-b033-4aae-b3cd-f27eda028d67",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                },
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "dxpStyle": {},
+                        "employeeLoginLinkLabel": "Are you an employee? Log in"
+                      },
+                      "definition": "community_login:employeeLoginLink",
+                      "id": "8ecbc105-567f-4872-9d01-468275bb56a9",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "28ecd2a3-8e7a-4ad9-853c-7ddcdb5d99b2",
+                  "name": "ba722",
+                  "title": "Column 2",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "8b9ccace-24e1-47aa-a84f-9040d0853818",
+              "type": "component"
+            }
+          ],
+          "id": "5f493cef-c10d-417f-b826-7efdb4a4a6bb",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "Home",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "db1f8214-47d7-47ce-83ba-c74532042c39",
+              "type": "component"
+            }
+          ],
+          "id": "cd43eafb-a20e-4b10-a26d-8e357f2bf956",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "5f673a5e-a1da-4865-a73d-f1e62afcddff",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "home"
+  }
+}

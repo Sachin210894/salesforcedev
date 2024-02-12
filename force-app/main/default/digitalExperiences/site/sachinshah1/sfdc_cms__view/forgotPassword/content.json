@@ -1,0 +1,90 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Forgot Password",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"15d6e169-b4c0-4049-9bbc-4e32ca0c5d34\",\"columns\":[{\"UUID\":\"924dbf0f-5a76-4bb0-92cb-a7a1e7041a61\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "alignment": "left",
+                        "dxpStyle": {},
+                        "imageInfo": "",
+                        "logoWidth": 250
+                      },
+                      "definition": "dxp_content_layout:siteLogo",
+                      "id": "f9848171-a082-42e1-b3fd-e9060d8ea0fe",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "cancelButtonLabel": "Cancel",
+                        "checkEmailUrl": "./CheckPasswordResetEmail",
+                        "dxpStyle": {},
+                        "instructionsLabel": "To reset your password, enter your username. We'll send a reset-password link to the email address associated with your account.",
+                        "submitButtonLabel": "Reset",
+                        "titleLabel": "Forgot your password?",
+                        "usernameLabel": "Username"
+                      },
+                      "definition": "community_login:forgotPassword",
+                      "id": "c3a4adbb-536f-43b0-b0ca-9001d9069161",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "924dbf0f-5a76-4bb0-92cb-a7a1e7041a61",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "15d6e169-b4c0-4049-9bbc-4e32ca0c5d34",
+              "type": "component"
+            }
+          ],
+          "id": "af735523-100f-4648-a7ce-6442ec24ab56",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "Forgot Password",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "60fd27d2-7056-4425-bb47-ae11947d0c91",
+              "type": "component"
+            }
+          ],
+          "id": "02553002-ba07-4782-aede-cd205347a1e9",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "58cbaff9-c0a6-4f50-8206-f42f246306a6",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "forgot-password"
+  }
+}

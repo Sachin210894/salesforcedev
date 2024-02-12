@@ -1,0 +1,103 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Address Form",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"09bf3b76-15c6-417f-9172-a3f20497dff5\",\"columns\":[{\"UUID\":\"46402f10-cec5-47c0-a23d-04c5ad722a91\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "componentHeaderEditAddressLabel": "Edit Address",
+                        "componentHeaderNewAddressLabel": "New Address",
+                        "dxpStyle": {},
+                        "formWidth": 50,
+                        "makeDefaultAddressLabel": "Make this my default address",
+                        "showCompanyName": true,
+                        "showComponentHeader": true,
+                        "showDifferentAddressTypes": true
+                      },
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "attributes": {
+                                "buttonSpacing": "medium",
+                                "dxpStyle": {},
+                                "firstActionButtonText": "Cancel",
+                                "firstActionButtonTextDecoration": "{}",
+                                "firstButtonVariant": "secondary",
+                                "secondActionButtonText": "Save",
+                                "secondActionButtonTextDecoration": "{}",
+                                "secondButtonVariant": "primary",
+                                "size": "standard"
+                              },
+                              "definition": "commerce_builder:actionButtons",
+                              "id": "8a226641-81b2-47da-836e-5f5851f8ee9f",
+                              "type": "component"
+                            }
+                          ],
+                          "id": "65579991-cd81-4474-93da-54e4b5dc5642",
+                          "name": "actionButtons",
+                          "title": "actionButtons",
+                          "type": "region"
+                        }
+                      ],
+                      "definition": "commerce_my_account:myAccountInputAddress",
+                      "id": "fde8c202-f063-47d8-b038-a2b33e2482c2",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "46402f10-cec5-47c0-a23d-04c5ad722a91",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "09bf3b76-15c6-417f-9172-a3f20497dff5",
+              "type": "component"
+            }
+          ],
+          "id": "8dadc21b-089b-43ff-8285-d3069c7d21bf",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "dxpStyle": {},
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "79bd5f2a-e120-4ff1-93cc-cd01f8cb1c56",
+              "type": "component"
+            }
+          ],
+          "id": "f302f852-7a27-4af5-a9ee-f72e8670c10b",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "ce652567-30fe-4c04-a460-6f8cc7178dda",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "address-form"
+  }
+}

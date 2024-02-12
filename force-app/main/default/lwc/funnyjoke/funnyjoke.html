@@ -2,10 +2,20 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-12-2024
+  @last modified on  : 02-12-2024
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
+  <lightning-input
+    type="text"
+    variant="label-hidden"
+    label={Name}
+    name={}
+    value={parameter}
+    required="true"
+    onblur={updateStringParameterValue}
+  ></lightning-input>
+
   <p>Lets Laugh</p>
   <lightning-card title="Joke">
     <p class="slds-p-horizontal_small">{newjoke}</p>

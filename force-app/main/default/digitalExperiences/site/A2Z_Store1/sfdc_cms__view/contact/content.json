@@ -1,0 +1,128 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "contact",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "dxpStyle": {},
+                "sectionConfig": "{\"UUID\":\"99e7f15b-03cb-42ab-8f97-228d18878aa4\",\"columns\":[{\"UUID\":\"45533b3f-dc91-4260-a39e-23fb9d9945ad\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "buttonAlignment": "left",
+                        "buttonSize": "standard",
+                        "buttonText": "Submit",
+                        "customFieldOneConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"test\"}",
+                        "customFieldOneLabel": "Custom Field Label",
+                        "customFieldOnePlaceholder": "Custom Field Placeholder",
+                        "customFieldThreeConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                        "customFieldThreeLabel": "Custom Field Label",
+                        "customFieldThreePlaceholder": "Custom Field Placeholder",
+                        "customFieldTwoConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                        "customFieldTwoLabel": "Custom Field Label",
+                        "customFieldTwoPlaceholder": "Custom Field Placeholder",
+                        "descriptionFieldConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"Description\"}",
+                        "descriptionLabel": "Description",
+                        "descriptionPlaceholder": "Enter your description",
+                        "dxpStyle": {},
+                        "emailFieldConfig": "{\"fieldInputType\":\"Email\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"SuppliedEmail\"}",
+                        "emailLabel": "Email",
+                        "emailPlaceholder": "Enter your email address",
+                        "fullNameFieldConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"SuppliedName\"}",
+                        "fullNameLabel": "Full Name",
+                        "fullNamePlaceholder": "Enter your name",
+                        "isCustomFieldOneRequired": false,
+                        "isCustomFieldThreeRequired": false,
+                        "isCustomFieldTwoRequired": false,
+                        "isDescriptionRequired": false,
+                        "isEmailRequired": false,
+                        "isFullNameRequired": false,
+                        "isPhoneRequired": false,
+                        "isSubjectRequired": true,
+                        "phoneFieldConfig": "{\"fieldInputType\":\"Phone\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"SuppliedPhone\"}",
+                        "phoneLabel": "Phone",
+                        "phonePlaceholder": "Enter your phone number",
+                        "position": "center",
+                        "showCustomFieldOne": false,
+                        "showCustomFieldThree": false,
+                        "showCustomFieldTwo": false,
+                        "showDescription": true,
+                        "showEmail": true,
+                        "showFormLabels": true,
+                        "showFullName": true,
+                        "showPhone": true,
+                        "showSubject": true,
+                        "showSubtitle": true,
+                        "showTitle": true,
+                        "subjectFieldConfig": "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"Subject\"}",
+                        "subjectLabel": "Subject",
+                        "subjectPlaceholder": "Enter your subject",
+                        "submitActionCustomErrorMessage": "Looks like something went wrong.",
+                        "submitActionSuccessInlineMessage": "Thank you!",
+                        "submitActionSuccessInlineMessageFontSize": "medium",
+                        "submitActionSuccessInlineMessagePosition": "center",
+                        "submitActionType": "inline",
+                        "subtitle": "Tell us how we can help.",
+                        "title": "Contact customer support",
+                        "width": 100
+                      },
+                      "definition": "dxp_form:contactSupportForm",
+                      "id": "363a6348-3b78-408b-8229-68e1f2197689",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "45533b3f-dc91-4260-a39e-23fb9d9945ad",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "99e7f15b-03cb-42ab-8f97-228d18878aa4",
+              "type": "component"
+            }
+          ],
+          "id": "4a0446a1-9f93-45cd-8ed8-91dd20862ccc",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "dxpStyle": {},
+                "pageTitle": "contact",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "f0828b68-f43f-4625-85fb-5d4857d8c7ea",
+              "type": "component"
+            }
+          ],
+          "id": "3b765234-911f-4518-ab06-754fcb46f3e6",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "f35cc439-6c65-48c6-bbd8-0e8d099b3715",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-contact"
+  }
+}
