@@ -13,5 +13,5 @@ public class QueryContact {
     //do not modify any code above this line
     //implement the logic that will use bindVars to retrieve the contact's ID
     return null;
-  }
+    }
 }

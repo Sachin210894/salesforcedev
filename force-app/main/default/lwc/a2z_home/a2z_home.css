@@ -1,15 +1,16 @@
-.main {
-  width: 100rem;
-  height: fit-content;
+.main{
+	width: 100rem;
+	height: fit-content;
 }
 
 .slds-carousel__panel-action {
-  border: none;
+    
+    border: none;
 }
-.slds-carousel__autoplay {
-  display: none;
+.slds-carousel__autoplay{
+	display:none;
 }
 
-.slds-carousel__content {
+.slds-carousel__content{
   height: 0px;
 }

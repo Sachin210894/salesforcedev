@@ -21,20 +21,18 @@ export default class Selectedvalue extends LightningElement {
   data = [];
   columns = columns;
   record = {};
-  newlist;
+  newlist ;
 
   connectedCallback() {
     this.data = generateData({ amountOfRecords: 100 });
   }
   getSelected() {
-    console.log(
-      "getSelectedRows => ",
-      this.template.querySelector("lightning-datatable").getSelectedRows()
-    );
-  }
-  handleRowAction = (event) => {
-    var selectedRows = event.detail.selectedRows;
+    console.log("getSelectedRows => ", this.template.querySelector('lightning-datatable').getSelectedRows());
+}
+  handleRowAction = event => {
+    var selectedRows=event.detail.selectedRows;
     console.log(JSON.stringify(selectedRows));
     this.newlist = JSON.stringify(selectedRows);
-  };
+
+  }
 }

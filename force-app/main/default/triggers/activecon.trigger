@@ -7,7 +7,7 @@ trigger activecon on Contact(
   after delete,
   after undelete
 ) {
-  if (Trigger.isBefore) {
+  if (Trigger.isBefore) { 
     system.debug('message trigger');
   } else if (Trigger.isAfter) {
     if (Trigger.isUpdate) {

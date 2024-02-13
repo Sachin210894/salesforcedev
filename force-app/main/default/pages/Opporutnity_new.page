@@ -1,22 +1,19 @@
 <apex:page standardController="Opportunity">
-  <apex:form>
-    <apex:pageBlock title="New Opportunity">
-      <apex:pageMessages />
-      <apex:pageBlockButtons>
-        <apex:commandButton value="Save" action="{!save}" />
-        <apex:commandButton value="Cancel" action="{!cancel}" />
-      </apex:pageBlockButtons>
-      <apex:pageBlockSection title="Opportunity Information" columns="2">
-        <apex:inputField value="{!Opportunity.Name}" required="true" />
-        <apex:inputField value="{!Opportunity.CloseDate}" required="true" />
-        <apex:inputField
-          value="{!Opportunity.LastModifiedDate}"
-          required="true"
-        />
-        <apex:inputField value="{!Opportunity.CreatedDate}" required="true" />
-        <apex:inputField value="{!Opportunity.StageName }" required="true" />
-        <!-- Add other fields as needed -->
-      </apex:pageBlockSection>
-    </apex:pageBlock>
-  </apex:form>
+    <apex:form >
+        <apex:pageBlock title="New Opportunity">
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Opportunity Information" columns="2">
+                <apex:inputField value="{!Opportunity.Name}" required="true"/>
+                <apex:inputField value="{!Opportunity.CloseDate}" required="true"/>
+                                <apex:inputField value="{!Opportunity.LastModifiedDate}" required="true"/>
+                                                <apex:inputField value="{!Opportunity.CreatedDate}" required="true"/>
+                                                                                                <apex:inputField value="{!Opportunity.StageName }" required="true"/>
+                <!-- Add other fields as needed -->
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
 </apex:page>

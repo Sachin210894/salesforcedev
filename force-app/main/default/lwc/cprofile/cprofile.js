@@ -1,44 +1,39 @@
-import { LightningElement, wire } from "lwc";
+import { LightningElement,wire } from 'lwc';
 
-import USER_ID from "@salesforce/user/Id";
-import { getRecord } from "lightning/uiRecordApi";
-import UserNameFIELD from "@salesforce/schema/User.Name";
-import userEmailFIELD from "@salesforce/schema/User.Email";
-import userIsActiveFIELD from "@salesforce/schema/User.IsActive";
-import userAliasFIELD from "@salesforce/schema/User.Alias";
+import USER_ID from '@salesforce/user/Id';
+import { getRecord } from 'lightning/uiRecordApi';
+import UserNameFIELD from '@salesforce/schema/User.Name';
+import userEmailFIELD from '@salesforce/schema/User.Email';
+import userIsActiveFIELD from '@salesforce/schema/User.IsActive';
+import userAliasFIELD from '@salesforce/schema/User.Alias';
 
 export default class Cprofile extends LightningElement {
-  currentUserName;
-  currentUserEmail;
-  currentIsActive;
-  currentUserAlias;
 
-  @wire(getRecord, {
-    recordId: USER_ID,
-    fields: [UserNameFIELD, userEmailFIELD, userIsActiveFIELD, userAliasFIELD]
-  })
-  currentUserInfo({ error, data }) {
-    if (data) {
-      this.currentUserName = data.fields.Name.value;
-      this.currentUserEmail = data.fields.Email.value;
-      this.currentIsActive = data.fields.IsActive.value;
-      this.currentUserAlias = data.fields.Alias.value;
-    } else if (error) {
-      this.error = error;
+
+    currentUserName;
+    currentUserEmail;
+    currentIsActive;
+    currentUserAlias;
+
+    
+
+    
+
+
+    @wire(getRecord, { recordId: USER_ID, fields: [UserNameFIELD, userEmailFIELD, userIsActiveFIELD, userAliasFIELD ]}) 
+    currentUserInfo({error, data}) {
+        if (data) {
+            this.currentUserName = data.fields.Name.value;
+            this.currentUserEmail = data.fields.Email.value;
+            this.currentIsActive = data.fields.IsActive.value;
+            this.currentUserAlias = data.fields.Alias.value;
+        } else if (error) {
+            this.error = error ;
+        }
+
+        console.log('this.user.data.fields.Name.value',this.currentUserName +' ---' +this.currentUserEmail+' ---' +this.currentUserAlias+' ---' +this.currentIsActive);
     }
-
-    console.log(
-      "this.user.data.fields.Name.value",
-      this.currentUserName +
-        " ---" +
-        this.currentUserEmail +
-        " ---" +
-        this.currentUserAlias +
-        " ---" +
-        this.currentIsActive
-    );
-  }
-  /* @wire(getRecord, { recordId: '$userId', fields: FIELDS })
+   /* @wire(getRecord, { recordId: '$userId', fields: FIELDS })
     user;
 
     get userName() {

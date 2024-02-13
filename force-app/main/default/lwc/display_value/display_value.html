@@ -6,20 +6,21 @@
     onchange={handleFormTypeChange}
   ></lightning-combobox>
 
-  <!-- <lightning-input label="Field Name" onchange={displayfield}></lightning-input> 
+    <!-- <lightning-input label="Field Name" onchange={displayfield}></lightning-input> 
 
     <lightning-input label="Label" value={labelValue}></lightning-input> !-->
 
-  <lightning-input
-    label="Field Name"
-    onchange={handleFieldChange}
-    required
-  ></lightning-input>
+     <lightning-input
+        label="Field Name"
+        onchange={handleFieldChange}
+        required
+    ></lightning-input>
 
-  <lightning-input label="Label" value={labelValue}></lightning-input>
-  <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+    <lightning-input label="Label" value={labelValue}></lightning-input>
+    <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
 
-  <div if:true={error}>
-    <p style="color: red">{error}</p>
-  </div>
+        <div if:true={error}>
+        <p style="color: red;">{error}</p>
+    </div>
+
 </template>

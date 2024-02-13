@@ -1,20 +1,13 @@
 <template>
   <div class="container">
-    <lightning-layout vertical-align="center">
-      <lightning-input
-        type="number"
-        variant="standard"
-        name="name"
-        onchange={submit}
-        value={percent}
-        label="Enter Percentage"
-        placeholder="type here..."
-      ></lightning-input>
-      <lightning-layout-item> {percent}% </lightning-layout-item>
-      <lightning-layout-item flexibility="grow">
-        <div class="bar" style={style}></div>
-        <p>Hello sachin</p>
-      </lightning-layout-item>
-    </lightning-layout>
-  </div>
+        <lightning-layout vertical-align="center">
+
+            <lightning-input type="number" variant="standard"  name="name" onchange={submit} value={percent} label="Enter Percentage" placeholder="type here..."></lightning-input>
+            <lightning-layout-item> {percent}% </lightning-layout-item>
+            <lightning-layout-item flexibility="grow">
+                <div class="bar" style={style}></div>
+                <p>Hello sachin</p> 
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
 </template>

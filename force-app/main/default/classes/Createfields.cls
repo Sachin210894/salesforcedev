@@ -46,7 +46,8 @@ global class Createfields {
           label.replace(' ', '_') +
           '__c"}'
       );
-    } else if (fieldType == 'Number') {
+    }
+    else if(fieldType == 'Number') {
       request.setBody(
         '{"Metadata" : {"type" : "' +
           fieldType +
@@ -66,7 +67,8 @@ global class Createfields {
           label.replace(' ', '_') +
           '__c"}'
       );
-    } else {
+    }
+    else {
       Resp.put('Error', 'Please provide field type');
       return Resp;
     }
