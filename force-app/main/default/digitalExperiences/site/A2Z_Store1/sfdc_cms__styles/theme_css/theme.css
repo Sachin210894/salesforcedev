@@ -63,6 +63,7 @@ b2c_lite_commerce-my-account-menu-ui lightning-menu-subheader {
   border-bottom: 1px solid var(--dxp-g-root-1);
 }
 
-.THIS.slds-carousel__panel-action {
-  border: none;
+slds-carousel__content {
+  padding: none !important;
+  height: none !important;
 }
