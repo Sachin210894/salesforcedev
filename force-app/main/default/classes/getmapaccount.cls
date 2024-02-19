@@ -18,6 +18,7 @@ public with sharing class getmapaccount {
         BillingPostalCode,
         BillingCountry
       FROM Account
+      WHERE BillingCity != '' AND BillingCountry != ''
       LIMIT 10
     ];
   }

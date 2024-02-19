@@ -5,7 +5,7 @@ export default class L_map extends LightningElement {
   @track error;
   @track mapMarkers = [];
   @track markersTitle = "Accounts";
-  @track zoomLevel = 4;
+  @track zoomLevel = 2;
 
   /* Load address from Controller */
   @wire(fetchAccounts, {})
