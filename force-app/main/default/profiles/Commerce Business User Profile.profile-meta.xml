@@ -294,6 +294,10 @@
         <apexPage>demochat</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>demovf</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <userLicense>Identity</userLicense>
     <userPermissions>
         <enabled>true</enabled>
