@@ -2,18 +2,21 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 02-27-2024
+  @last modified on  : 02-20-2024
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
-<apex:page standardController="Account">
-  <h1>Welcome to Volansys !!!</h1>
-  <apex:pageBlock>
-    <apex:pageBlockSection title="Account Details">
-      <apex:outputField value="{!Account.Partner_Name__c}" /><br />
-      <apex:outputField
-        label="Account Owner name"
-        value="{!Account.owner.name}"
-      />
+<apex:page standardController="user" sidebar="false" showHeader="false">
+  <apex:pageBlock title="Hello {!$User.FirstName}!">
+    <apex:pageBlockSection title="Account Information">
+      <apex:outputField value="{!user.name}" /><br />
+      <apex:outputField value="{!user.UserRoleId}" /><br />
+      <apex:outputField value="{!user.ProfileId}" /><br />
+      <apex:outputField value="{!user.Title}" />
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Related List">
+      <apex:pageBlockTable value="{!user.Account}" var="acc" cellpadding="4">
+        <apex:column value="{!acc.name}" />
+      </apex:pageBlockTable>
     </apex:pageBlockSection>
   </apex:pageBlock>
 </apex:page>
