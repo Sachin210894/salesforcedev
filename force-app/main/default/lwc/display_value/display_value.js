@@ -3,6 +3,7 @@ import { LightningElement, track } from "lwc";
 export default class Display_value extends LightningElement {
   @track selectedFormType = "";
   @track labelValue = "";
+  @track sizevalue = "";
   @track fieldValue = "";
   @track error = "";
 
@@ -27,6 +28,11 @@ export default class Display_value extends LightningElement {
     this.resetError();
   }
 
+  handleFieldChange2(event) {
+    this.sizevalue = event.target.value;
+    this.resetError();
+  }
+
   resetError() {
     this.error = "";
   }
@@ -46,6 +52,8 @@ export default class Display_value extends LightningElement {
     console.log("Selected Form Type:", this.selectedFormType);
     console.log("Field Name:", this.fieldValue);
     console.log("Label:", this.labelValue);
+    console.log("Sizevalue:", this.sizevalue);
+
     this.resetError();
   }
 }

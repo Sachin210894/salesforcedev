@@ -1,26 +1,40 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-13-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
 <template>
-  <lightning-combobox
-    label="Select Form Type"
-    value={selectedFormType}
-    options={formTypeOptions}
-    onchange={handleFormTypeChange}
-  ></lightning-combobox>
+  <div>
+    <lightning-combobox
+      label="Select Form Type"
+      value={selectedFormType}
+      options={formTypeOptions}
+      onchange={handleFormTypeChange}
+    ></lightning-combobox>
 
     <!-- <lightning-input label="Field Name" onchange={displayfield}></lightning-input> 
 
     <lightning-input label="Label" value={labelValue}></lightning-input> !-->
 
-     <lightning-input
-        label="Field Name"
-        onchange={handleFieldChange}
-        required
+    <lightning-input
+      label="Field Name"
+      onchange={handleFieldChange}
+      required
     ></lightning-input>
 
     <lightning-input label="Label" value={labelValue}></lightning-input>
-    <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+    <lightning-input
+      label="Size"
+      type="number"
+      onchange={handleFieldChange2}
+      value={sizevalue}
+    ></lightning-input>
+  </div>
+  <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
 
-        <div if:true={error}>
-        <p style="color: red;">{error}</p>
-    </div>
-
+  <div if:true={error}>
+    <p style="color: red">{error}</p>
+  </div>
 </template>
